@@ -19,8 +19,8 @@ export const UIOverlay: React.FC<UIOverlayProps> = ({ mode, onToggle, onPhotosUp
   const [uploadProgress, setUploadProgress] = useState<string>('');
 
   // CONFIGURATION: Replace these with your Cloudinary details
-  const CLOUD_NAME = "your_cloud_name"; 
-  const UPLOAD_PRESET = "your_unsigned_preset"; 
+  const CLOUD_NAME = "ml_default"; 
+  const UPLOAD_PRESET = "unsigned"; 
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
